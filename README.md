@@ -58,6 +58,38 @@ As well as `opt.best_energy` to display the cost function value with these param
 0.007882441944247037
 ```
 ## Usage: combinatorial optimization
+For combinatorial problems such as the traveling salesman problem, usage is just as easy. This time however, we'll just code out an example tsp cost function. First we'll calculate distances using a Euclidean approach.
+```python
+def calc_euclidean(p1, p2):    
+    return ((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)**0.5
+```
+Next, the actual tsp class can be created:
+```python
+class tsp():
+    def __init__(self, dist_func, close_loop=True):
+        self.dist_func = dist_func
+        self.close_loop = close_loop
+    
+    def dist(self, xy):
+        # sequentially calculate distance between all tsp nodes
+        dist = 0
+        for i in range(len(xy)-1): 
+            dist += self.dist_func(xy[i+1], xy[i])
+
+        # close the tsp loop by calculating the distance 
+        # between the first and last points
+        if self.close_loop:
+            dist += self.dist_func(xy[0], xy[-1])
+        
+        return dist
+```
+Initialize the tsp cost function
+```python
+tsp_dist = tsp(dist_func=calc_euclidean, close_loop=True).dist
+```
+
+
+
 
 ## Cooling Schedules
 There are several cooling schedules available with this implementation. They are as follows:
