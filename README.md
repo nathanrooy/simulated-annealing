@@ -59,5 +59,12 @@ As well as `opt.best_energy` to display the cost function value with these param
 ```
 ## Usage: combinatorial optimization
 
+## Cooling Schedules
+There are several cooling schedules available with this implementation. They are as follows:
+- linear
+- exponential
+- logarithmic
+- quadratic
+
 ## Examples
 
