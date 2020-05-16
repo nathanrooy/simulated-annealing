@@ -1,5 +1,5 @@
 # simple simulated annealing
-
+This repo contains a very simple implementation of <a target="_blank" href="https://en.wikipedia.org/wiki/Simulated_annealing">simulated annealing</a> based on the tutorial available [here].
 
 ## Installation
 ```sh
