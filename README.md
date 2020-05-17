@@ -112,5 +112,6 @@ cooling sched.: linear additive cooling
 
 ## Cooling Schedules
 There are several cooling schedules available with this implementation. They are as follows: `linear`, `exponential`, `logarithmic`, and `quadratic`. They can be specified as using the `cooling_schedule=` input as follows:
-`opt = sa.minimize(cost_func, x0, opt_mode='combinatorial', cooling_schedule='linear', ...)
+</br>
+`opt = sa.minimize(cost_func, x0, opt_mode='combinatorial', cooling_schedule='linear', ...)`
 
