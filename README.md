@@ -58,45 +58,57 @@ As well as `opt.best_energy` to display the cost function value with these param
 0.007882441944247037
 ```
 ## Usage: combinatorial optimization
-For combinatorial problems such as the traveling salesman problem, usage is just as easy. This time however, we'll just code out an example tsp cost function. First we'll calculate distances using a Euclidean approach.
+For combinatorial problems such as the traveling salesman problem, usage is just as easy. First, let's define a method for calculating the distance between our points. In this case, Euclidean distance is used, but it can be anything...
 ```python
 def calc_euclidean(p1, p2):    
     return ((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)**0.5
 ```
-Next, the actual tsp class can be created:
+Next, let's prepare some points. In the intrest of simplicity, we'll just generate 6 points on the perimiter of the unit circle.
 ```python
-class tsp():
-    def __init__(self, dist_func, close_loop=True):
-        self.dist_func = dist_func
-        self.close_loop = close_loop
-    
-    def dist(self, xy):
-        # sequentially calculate distance between all tsp nodes
-        dist = 0
-        for i in range(len(xy)-1): 
-            dist += self.dist_func(xy[i+1], xy[i])
-
-        # close the tsp loop by calculating the distance 
-        # between the first and last points
-        if self.close_loop:
-            dist += self.dist_func(xy[0], xy[-1])
-        
-        return dist
+from math import cos
+from math import sin
+from math import pi
+n_pts = 6
+d_theta = (2 * pi) / n_pts
+theta = [d_theta * i for i in range(0, n_pts)]
+x0 = [(cos(r), sin(r)) for r in theta]
 ```
-Initialize the tsp cost function
+Now, prepeare the cost function.
 ```python
-tsp_dist = tsp(dist_func=calc_euclidean, close_loop=True).dist
+from landscapes.single_objective import tsp
+cost_func = tsp(calc_euclidean, close_loop=True).dist
 ```
+Because we generated our perimiter points in rotational order, `x0` is already the optimal solution. We can check this with:
+```python
+>>> cost_func(x0)
+>>> 6.0
+```
+Now let's optimize this while remembering to shuffle the points prior to running.
+```python
+from random import shuffle
+shuffle(x0)
+opt = sa.minimize(cost_func, x0, opt_mode='combinatorial', step_max=1000, t_max=1, t_min=0)
+```
+The results should look something like the following:
+```python
+>>> opt.results()
++------------------------ RESULTS -------------------------+
+
+      opt.mode: combinatorial
+cooling sched.: linear additive cooling
 
 
+  initial temp: 1
+    final temp: 0.001000
+     max steps: 1000
+    final step: 1000
 
+  final energy: 6.000000
+
++-------------------------- END ---------------------------+
+```
 
 ## Cooling Schedules
-There are several cooling schedules available with this implementation. They are as follows:
-- linear
-- exponential
-- logarithmic
-- quadratic
-
-## Examples
+There are several cooling schedules available with this implementation. They are as follows: `linear`, `exponential`, `logarithmic`, and `quadratic`. They can be specified as using the `cooling_schedule=` input as follows:
+`opt = sa.minimize(cost_func, x0, opt_mode='combinatorial', cooling_schedule='linear', ...)
 
