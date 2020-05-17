@@ -83,6 +83,8 @@ Because we generated our perimiter points in rotational order, `x0` is already t
 >>> cost_func(x0)
 >>> 6.0
 ```
+Just under two pi...
+
 Now let's optimize this while remembering to shuffle the points prior to running.
 ```python
 from random import shuffle
