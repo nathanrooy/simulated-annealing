@@ -1,5 +1,5 @@
 # simple simulated annealing
-This repo contains a very simple implementation of <a target="_blank" href="https://en.wikipedia.org/wiki/Simulated_annealing">simulated annealing</a> based on the tutorial available [here].
+This repo contains a very simple implementation of <a target="_blank" href="https://en.wikipedia.org/wiki/Simulated_annealing">simulated annealing</a> based on the tutorial available [<a target="_blank" href="https://nathanrooy.github.io/posts/2020-05-14/simulated-annealing-with-python/">here</a>].
 
 ## Installation
 You can either download/clone this repo or pip install it as follows.
