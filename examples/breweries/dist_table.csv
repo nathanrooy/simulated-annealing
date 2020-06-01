@@ -1,0 +1,91 @@
+origin,destination,dist_m
+3 Points Urban Brewery,Rhinegeist Brewery,1588.452
+3 Points Urban Brewery,Christian Moerlein Brewing Co.,877.373
+3 Points Urban Brewery,Taft's Ale House,985.198
+3 Points Urban Brewery,The Woodburn Brewery,4329.929
+3 Points Urban Brewery,Urban Artifact,7298.081
+3 Points Urban Brewery,Listermann Brewing Company,6304.398
+3 Points Urban Brewery,MadTree Brewing,10087.492
+3 Points Urban Brewery,Braxton Brewing Company,3675.879
+3 Points Urban Brewery,Fifty West Brewing Company,16793.108
+Rhinegeist Brewery,3 Points Urban Brewery,1700.479
+Rhinegeist Brewery,Christian Moerlein Brewing Co.,898.78
+Rhinegeist Brewery,Taft's Ale House,896.907
+Rhinegeist Brewery,The Woodburn Brewery,5033.966
+Rhinegeist Brewery,Urban Artifact,6182.329
+Rhinegeist Brewery,Listermann Brewing Company,6942.311
+Rhinegeist Brewery,MadTree Brewing,10791.529
+Rhinegeist Brewery,Braxton Brewing Company,4558.633
+Rhinegeist Brewery,Fifty West Brewing Company,17497.145
+Christian Moerlein Brewing Co.,3 Points Urban Brewery,877.373
+Christian Moerlein Brewing Co.,Rhinegeist Brewery,786.753
+Christian Moerlein Brewing Co.,Taft's Ale House,496.552
+Christian Moerlein Brewing Co.,The Woodburn Brewery,4274.4
+Christian Moerlein Brewing Co.,Urban Artifact,6496.382
+Christian Moerlein Brewing Co.,Listermann Brewing Company,6248.869
+Christian Moerlein Brewing Co.,MadTree Brewing,10031.963
+Christian Moerlein Brewing Co.,Braxton Brewing Company,3775.073
+Christian Moerlein Brewing Co.,Fifty West Brewing Company,16737.579
+Taft's Ale House,3 Points Urban Brewery,1159.381
+Taft's Ale House,Rhinegeist Brewery,821.105
+Taft's Ale House,Christian Moerlein Brewing Co.,708.055
+Taft's Ale House,The Woodburn Brewery,4937.766
+Taft's Ale House,Urban Artifact,6931.106
+Taft's Ale House,Listermann Brewing Company,6912.235
+Taft's Ale House,MadTree Brewing,10695.329
+Taft's Ale House,Braxton Brewing Company,3661.726
+Taft's Ale House,Fifty West Brewing Company,17400.945
+The Woodburn Brewery,3 Points Urban Brewery,3911.603
+The Woodburn Brewery,Rhinegeist Brewery,4907.439
+The Woodburn Brewery,Christian Moerlein Brewing Co.,4261.684
+The Woodburn Brewery,Taft's Ale House,4758.236
+The Woodburn Brewery,Urban Artifact,7407.657
+The Woodburn Brewery,Listermann Brewing Company,2158.841
+The Woodburn Brewery,MadTree Brewing,5757.563
+The Woodburn Brewery,Braxton Brewing Company,7124.32
+The Woodburn Brewery,Fifty West Brewing Company,12463.179
+Urban Artifact,3 Points Urban Brewery,7243.622
+Urban Artifact,Rhinegeist Brewery,6196.077
+Urban Artifact,Christian Moerlein Brewing Co.,6441.923
+Urban Artifact,Taft's Ale House,6780.072
+Urban Artifact,The Woodburn Brewery,7412.221
+Urban Artifact,Listermann Brewing Company,7220.237
+Urban Artifact,MadTree Brewing,11721.725
+Urban Artifact,Braxton Brewing Company,10216.996
+Urban Artifact,Fifty West Brewing Company,18475.725
+Listermann Brewing Company,3 Points Urban Brewery,5847.701
+Listermann Brewing Company,Rhinegeist Brewery,6595.562
+Listermann Brewing Company,Christian Moerlein Brewing Co.,6197.782
+Listermann Brewing Company,Taft's Ale House,6694.334
+Listermann Brewing Company,The Woodburn Brewery,2158.841
+Listermann Brewing Company,Urban Artifact,7221.407
+Listermann Brewing Company,MadTree Brewing,4769.525
+Listermann Brewing Company,Braxton Brewing Company,9147.92
+Listermann Brewing Company,Fifty West Brewing Company,11523.525
+MadTree Brewing,3 Points Urban Brewery,9666.27
+MadTree Brewing,Rhinegeist Brewery,10662.106
+MadTree Brewing,Christian Moerlein Brewing Co.,10016.351
+MadTree Brewing,Taft's Ale House,10512.903
+MadTree Brewing,The Woodburn Brewery,5754.667
+MadTree Brewing,Urban Artifact,11797.067
+MadTree Brewing,Listermann Brewing Company,4771.505
+MadTree Brewing,Braxton Brewing Company,12497.43
+MadTree Brewing,Fifty West Brewing Company,7528.116
+Braxton Brewing Company,3 Points Urban Brewery,3748.485
+Braxton Brewing Company,Rhinegeist Brewery,4579.438
+Braxton Brewing Company,Christian Moerlein Brewing Co.,4022.608
+Braxton Brewing Company,Taft's Ale House,3810.77
+Braxton Brewing Company,The Woodburn Brewery,7122.137
+Braxton Brewing Company,Urban Artifact,10345.867
+Braxton Brewing Company,Listermann Brewing Company,9220.869
+Braxton Brewing Company,MadTree Brewing,12545.212
+Braxton Brewing Company,Fifty West Brewing Company,19210.173
+Fifty West Brewing Company,3 Points Urban Brewery,16422.342
+Fifty West Brewing Company,Rhinegeist Brewery,17418.178
+Fifty West Brewing Company,Christian Moerlein Brewing Co.,16772.423
+Fifty West Brewing Company,Taft's Ale House,17268.975
+Fifty West Brewing Company,The Woodburn Brewery,12510.739
+Fifty West Brewing Company,Urban Artifact,18564.367
+Fifty West Brewing Company,Listermann Brewing Company,11538.805
+Fifty West Brewing Company,MadTree Brewing,7538.229
+Fifty West Brewing Company,Braxton Brewing Company,19253.502
