@@ -1,4 +1,9 @@
 # simple simulated annealing
+[![gh-actions-ci](https://img.shields.io/github/workflow/status/nathanrooy/simulated-annealing/ci?style=flat-square)](https://github.com/nathanrooy/simulated-annealing/actions?query=workflow%3Aci)
+[![GitHub license](https://img.shields.io/github/license/nathanrooy/simulated-annealing?style=flat-square)](https://github.com/nathanrooy/simulated-annealing/blob/master/LICENSE)
+[![codecov](https://img.shields.io/codecov/c/github/nathanrooy/simulated-annealing.svg?style=flat-square)](https://codecov.io/gh/nathanrooy/simulated-annealing)
+
+
 This repo contains a very simple implementation of <a target="_blank" href="https://en.wikipedia.org/wiki/Simulated_annealing">simulated annealing</a> based on the tutorial available [<a target="_blank" href="https://nathanrooy.github.io/posts/2020-05-14/simulated-annealing-with-python/">here</a>].
 
 ## Installation
