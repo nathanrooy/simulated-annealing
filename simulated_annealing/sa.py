@@ -109,8 +109,7 @@ class minimize():
                 self.step,
                 self.t,
                 self.current_energy,
-                self.best_energy
-            ])
+                self.best_energy])
 
             # update some stuff
             self.t = self.update_t(self.step)
