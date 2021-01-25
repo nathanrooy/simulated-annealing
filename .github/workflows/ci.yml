@@ -28,12 +28,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
     - name: Test with unittest
-      run: python -m unittest test/sa_test.py
+      run: python -m unittest tests/sa_test.py
     - name: Submit to codecov
       if: ${{ matrix.python-version == '3.8' }}
       run: |
         pip install coverage
-        coverage run -m unittest test/sa_test.py
+        coverage run -m unittest tests/sa_test.py
         bash <(curl -s https://codecov.io/bash)
     - name: Lint with flake8
       run: |
