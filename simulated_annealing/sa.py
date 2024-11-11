@@ -74,12 +74,12 @@ class minimize():
         if self.cooling_schedule == 'exponential':
             if alpha == None: self.alpha =  0.8
             else: self.alpha = alpha
-            self.update_t = self.cooling_exponential
+            self.update_t = self.cooling_exponential_m
 
         if self.cooling_schedule == 'logarithmic':
             if alpha == None: self.alpha =  0.8
             else: self.alpha = alpha
-            self.update_t = self.cooling_logarithmic
+            self.update_t = self.cooling_logarithmic_m
 
 
         # begin optimizing
